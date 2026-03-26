@@ -67,6 +67,12 @@ public class Triangles {
      * @param c the length of a segment.
      * @return the perimeter of the triangle, or -1 if it is not a triangle
      */
+    public double perimetre(double a, double b, double c) {
+        if (!isTriangle(a, b, c)) {
+            return -1;
+        }
+        return a + b + c;
+    }
     
     public double round(double num, byte dec) {
         return Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
